@@ -1,0 +1,83 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+.nav{
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+.logo{
+  font-family: "Anta", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  margin: 5px 0px 10px 0px;
+  color: aqua;
+  font-size: x-large; 
+}
+
+.nav-items{
+  display: flex;
+  align-items: center;
+  list-style: none;
+  justify-content: space-between;
+  padding-right: 25px;
+  width: 30%;
+}
+
+.nav-items a{
+  text-decoration: none;
+  color: white;
+}
+
+.nav-items a:hover{
+  color: aqua;
+}
+
+.bar{
+  display: none;
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+  .nav-items{
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav-items{
+    display: flex;
+    flex-direction: column;
+    top: 60px;
+    height: 100vh;
+    position: absolute;
+    left: -100%;
+    justify-content: space-evenly;
+    background-color: black;
+    width: 50%;
+    transition: all 500ms linear;
+  }
+
+  .bar{
+    display: flex;
+    align-self: center;
+    margin: 10px;
+  }
+
+   .bar:hover{
+    color: aqua;
+  }
+
+  #toggle-list.active{
+    left: 0%;
+  }
+}

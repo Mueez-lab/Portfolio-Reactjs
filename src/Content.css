@@ -1,0 +1,91 @@
+.info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.info-subdiv{
+    width: 80%;
+}
+
+.info-subdiv h1,.info-subdiv h3,.info-subdiv p {
+  margin-bottom: 7px;
+}
+
+.info-subdiv h1{
+    font-size: 3rem;
+}
+
+.info-subdiv p{
+    font-size: 1.3rem;
+    line-height: 2rem;
+    word-spacing: 1.5px;
+}
+
+span{
+    color: aqua;
+}
+
+.info-subdiv h3{
+    font-size: 2rem;
+}
+
+.icons-div .icon-brand{
+    margin-right: 10px;
+}
+
+.hire-button{
+    margin-top: 15px;
+    color: aqua;
+    border: 2px solid aqua;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.hire-button:hover{
+    color:rgb(150, 255, 255);
+}
+
+.hire-icon{
+    margin-left: 5px;
+}
+
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-subdiv{
+    width: 80%;
+}
+
+.image-subdiv img{
+    filter: drop-shadow(0px 2px aqua);
+    display: flex;
+    max-width: 67%;
+}
+
+
+@media screen and (max-width: 767px) {
+    .info-subdiv{
+        height: 100%;
+        margin-top: 30px;
+        width: 100%;
+        margin-left:20px;
+    }
+
+    .image-subdiv{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .info{
+        height: 100%;
+    }
+}
